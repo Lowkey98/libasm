@@ -10,7 +10,7 @@ $(NAME):
 	nasm -f macho64 ft_strcpy.s -o ft_strcpy.o
 	nasm -f macho64 ft_strcmp.s -o ft_strcmp.o
 	nasm -f macho64 ft_read.s -o ft_read.o
-	nasm -f macho64 ft_strdup.s -o ft_strdup.s
+	nasm -f macho64 ft_strdup.s -o ft_strdup.o
 	ar -rc $(NAME) $(OBJ) && ranlib $(NAME)
 
 clean:

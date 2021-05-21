@@ -10,5 +10,6 @@ bcl:
 	inc rcx
 	jmp bcl
 exit:
+	mov BYTE[rdi + rcx],0
 	mov rax,rdi
 	ret
