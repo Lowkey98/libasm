@@ -12,16 +12,17 @@ _ft_strdup:
     push rdi
     mov rdi,rax; rdi = 5;
     inc rdi
+    ;mov rdi, -1
     call _malloc; rax = addr
     cmp rax,0
-    je error
+    jne error
     mov rdi,rax
     pop rsi
     call _ft_strcpy
     ret
 error:
-    ;call ___error
-    ;pop qword[rax]
-    ;mov qword[rax],12
+    call ___error
+    mov qword[rax],12
     mov rax,0
+    pop rdi
     ret

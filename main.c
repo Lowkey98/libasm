@@ -13,7 +13,7 @@ int main()
 		//if (ft_strdup("ayoub") == 0)
 			//printf("%s\n", strerror(errno));
 	ft_strdup("ayoub");
-	//printf("%s\n", strerror(errno));
+	printf("%s\n", strerror(errno));
    //write(3,"hello",5);
 		//printf("ft_strcmp(\"ayoub\",\"ayoub\"): %d\n",ft_strcmp("ab","a"));
 		//printf("---strcmp(\"ayoub\",\"ayoub\"): %d",strcmp("ab","a"));
